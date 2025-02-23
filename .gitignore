@@ -1,0 +1,3 @@
+task-manager-app-backend/node_modules
+task-manager-app-frontend/node_modules
+.env
