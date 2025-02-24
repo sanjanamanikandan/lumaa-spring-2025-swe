@@ -1,7 +1,5 @@
 # Setup Instructions
 
----
-
 ## Database Setup
 
 1. Install PostgreSQL.
@@ -20,7 +18,7 @@ cd task-manager-app-backend
 2. Start the server.
 
 ```
-npm run start
+npm run dev
 ```
 
 ## How to Run the Frontend
@@ -39,6 +37,8 @@ npm start
 
 ## Salary Expectations
 
----
-
 ### $25/hr ~ $2000/month
+
+## Demo Video
+
+### [Full Stack Coding Challenge Demo](https://drive.google.com/file/d/17UANrVYJOXMu9cBcqOqzvAAkDS5MMXPV/view?usp=sharing)
