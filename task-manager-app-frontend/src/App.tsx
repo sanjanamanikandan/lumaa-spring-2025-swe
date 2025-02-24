@@ -33,7 +33,6 @@ const App: React.FC = () => {
   };
 
   const createTask = async () => {
-    console.log(`${title}`);
     await axios.post(
       `${API_URL}/tasks`,
       {title, description},
@@ -64,7 +63,6 @@ const App: React.FC = () => {
         <h2>Register</h2>
         <form onSubmit={async (e) => {
           e.preventDefault();
-          console.log(`${API_URL}`);
           const response = await axios.post(`http://localhost:3001/auth/register`, {
             username: e.currentTarget.username.value,
             password: e.currentTarget.password.value,
@@ -134,26 +132,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.tsx</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
